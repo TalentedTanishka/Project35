@@ -71,6 +71,7 @@ foodObj.updateFoodStock(foodS)
 function feedDog()
 {
 dog.addImage(happyDog);
+	foodObj.velocityX = 2
   foodObj.updateFoodStock(foodObj.getFoodStock()-1);
   database.ref('/').update({
     foodStock:foodObj.getFoodStock(),
